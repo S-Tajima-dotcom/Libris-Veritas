@@ -1,0 +1,425 @@
+/********************************************************/
+/*  css_style_2021115                                                                    */
+/*  Ver 1.0                                                                                     */
+/*                                                                                                 */
+/********************************************************/
+
+
+@charset "utf-8";
+
+/*---------------------------------------------------------------------------------------------*/
+/*                   Over all definition                                                                                     */
+/*---------------------------------------------------------------------------------------------*/
+
+body {
+	color: #000;                                                  /* text color, black  */
+	background-color: #FFF;	                              /*background color, white*/
+	margin: 0px;
+	padding: 0px;
+	font: 14px/2 "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "メイリオ", 
+	          Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", Osaka;	
+			  /* fontsize/line width、fonts*/
+}
+h1,h2,h3,h4,h5,p,ul,ol,li,dl,dt,dd,form,figure{
+	margin: 0px;
+	padding: 0px;
+}
+ul{
+	list-style-type: none;
+}
+img {
+	border: none;
+	vertical-align: bottom;
+}
+input,textarea,select {
+	font-size: 1em;
+}
+form {
+	margin: 0px;
+}
+table {
+	border-collapse:collapse;
+	font-size: 100%;
+	border-spacing: 0;
+}
+/*---------------------------------------------------------------------------------------------*/
+/*                   Link definition                                                                                           */
+/*---------------------------------------------------------------------------------------------*/
+
+a {
+	color: #111;	                 /*Text color, dark grey */
+}
+a:hover {
+	color: #e00f0f;			    /*char color at Mouse ON, almost red */
+	text-decoration: none;	/*delete under line at Mouse ON*/
+}
+/*---------------------------------------------------------------------------------------------*/
+/*                   Container ;    (Block of Home page)                                                           */
+/*---------------------------------------------------------------------------------------------*/
+
+#container {
+	width: 985px;	                                       /* container width */
+	margin: 0px auto;
+	background: #FFF;	                               /* background color, white */
+	border-top: 5px solid #009c38;		       /*top line width , type ,color*/
+	border-right: 1px solid #d2d2d2;	       /*right line width, type, color*/
+	border-bottom: 1px solid #d2d2d2;	   /*bottom line width,type,color*/
+	border-left: 1px solid #d2d2d2;		       /*left line width, type, color*/
+}
+/*---------------------------------------------------------------------------------------------*/
+/*                   Header ;    Site name  Top pictre                                                              */
+/*---------------------------------------------------------------------------------------------*/
+/* Overall Header size*/
+header {
+	height: 200px;	              /*height of header,   give margin from header picture*/
+	width: 100%;	              /*widrh of header*/
+	position: relative;
+}
+/* header h1 tag */
+header h1 {
+	font-size: 20px;		      /* font size */
+	line-height: 10px;	      /* gives margin between lines */
+	position: absolute;
+	top: 23px;			          /* 20px from top*/
+	left: 20px;			          /* 20px from left*/
+	font-weight: normal;	  /* change default, bold ->normal */
+	color: #000;	              /* font color, black */
+}
+/* header h2 tag */
+header h2 {
+	font-size: 20px;		      /* font size */
+	line-height: 10px;	      /* gives margin between lines */
+	position: absolute;
+	top: 48px;			          /* 45px from top */
+	left: 20px;			          /* 20px from left */
+	font-weight: normal;	  /* change default, bold ->normal */
+	color: #000;	              /* font color, black */
+}
+/*header p */
+header p {
+	position: relative;
+	top: 63px;			            /* 60px from top */
+	left: 20px;			            /* 20px from left */
+	line-height: 5px;	            /* gives margin between lines */
+	padding: 1em 5px 0em;  /* spece top, left/right, bottom */
+	text-indent:1em;	            /* indent */
+	
+}
+
+/* logo picture location */
+header #logo {
+	position: absolute;
+	left: 350px;	                   /* left  20px from header block */
+	top: 0px;              	       /* top  24px from header block*/
+}
+
+/*---------------------------------------------------------------------------------------------*/
+/*                   main menu                                                                                               */
+/*---------------------------------------------------------------------------------------------*/
+
+/* Menu frame  */
+nav#menubar ul li {
+	float: left;
+	width:256px;                                        /* menu width */
+	border-top: 1px solid #d2d2d2;		     /* top line width,type,color */
+	border-bottom: 1px solid #d2d2d2;	 /* bottom line width,type, color */
+	border-left: 5px solid #ffffff;		         /* right line width,type,color */
+}
+/* Menu design, display */
+nav#menubar ul li a {
+	height: 38px;	                /* height */
+	padding-top: 7px;
+	line-height: 1.4;
+	text-decoration: none;
+	display: block;
+	font-size: 13px;	            /* font size */
+	font-weight: bold;	        /* bold font */
+	letter-spacing: 0.1em;	    /* font spaceing, wider */
+	text-align: center;	        /* font centering */
+	background-color: #fff;	/* back ground color (old browser shows this color only）*/
+	background-image: linear-gradient(#fff, #a0a0a0);			/*gradation*/
+}
+
+/* Mouse On, current(menu) definition */
+nav#menubar ul li a:hover,
+nav#menubar ul li#current a {
+	/* read out back ground color, backgroune picture */
+	background: #e6ebfa url(../images/menu_bg_on.png) no-repeat left center;	
+	
+}
+/* English character definition */
+nav#menubar ul li a span {
+	font-size: 14px;	          /*font size */
+	display: block;
+	font-weight: normal;
+	color:#009c38;             /* font color */
+}
+
+/*slide show
+---------------------------------------------------------------------------*/
+
+#slide_image2 {
+	z-Index:1;
+	height: auto;
+	width: 100%;
+	position: absolute;
+	left:0px;
+	top:0px;
+}
+/*---------------------------------------------------------------------------------------------*/
+/*                   Contents ;    main and sub blocks                                                              */
+/*---------------------------------------------------------------------------------------------*/
+
+#contents {
+	clear: left;
+	width: 950px;	              /* contents width */
+	padding-top: 30px;
+	margin: 0px auto;
+}
+/*---------------------------------------------------------------------------------------------*/
+/*                   main Contents                                                                                          */
+/*---------------------------------------------------------------------------------------------*/
+
+#main {
+	float: right;	                                /*  place right */
+	width: 730px;	                            /* main contetents width */
+	padding-bottom: 0px;
+}
+/*main h2 tag settings */
+#main h2 {
+	background-color: #00be8a;	  /* back ground color (old browser shows this color only）*/
+	font-size: 100%;
+	color: #FFF;		                          /* font color */
+	padding: 7px 15px 3px 30px;	  /* top, right, bottom,left margine */
+	border-radius: 10px;	              /* coner rounding */
+	clear: both;
+    margin-bottom: 1em;
+}
+
+/* engineering/science documents page */
+#main_eng {
+	float: right;	                                /*  place right */
+	width: 730px;	                            /* main contetents width */
+	padding-bottom: 0px;
+}
+/*main h2tag settings */
+#main_eng h2 {
+
+	background-color: #CFA4E4;	   /* back ground color (old browser shows this color only）*/
+	font-size: 100%;
+	color: #FFF;		                           /* font color */
+	padding: 7px 15px 3px 30px;	   /* top, right, bottom,left margine */
+	border-radius: 10px;	               /* coner rounding */
+	clear: both;
+    margin-bottom: 1em;
+}
+
+/* translation of literatures page */
+#main_lit {
+	float: right;	                                /*  place right */
+	width: 730px;	                            /* main contetents width */
+	padding-bottom: 0px;
+}
+/*main_lit h2 tag settings */
+#main_lit h2 {
+
+	background-color: #7CAEF5;	   /* back ground color (old browser shows this color only）*/
+	font-size: 100%;
+	color: #FFF;		                           /* font color */
+	padding: 7px 15px 3px 30px;	   /* margine top,right bottom,left*/
+	border-radius: 10px;	               /* coner rounding */
+	clear: both;
+    margin-bottom: 1em;
+}
+
+
+
+/*main page h3 tag settings */
+#main h3 {
+	background-color: #FFF;	          /* back ground color (old browser shows this color only）*/
+	font-size: 100%;
+	padding: 4px 15px;	                  /* top_bottom,left_right margine */
+	border-radius: 4px;	                  /* coner rounding */
+	clear: both;
+	border: 1px solid #CCC;	          /* line width, type, color */
+    margin-top: 2em;
+    margin-bottom: 1em;	              /* bottom margine */
+}
+#main h4 {
+	padding: 2px 15px 2px;	              /* margine top,right bottom,left*/
+	border-bottom: 1px solid #CCC;	  /* bottom_line width,type,color*/
+	border-left: 3px solid #0e36ca;	  /* left_line width ,type,color*/
+	margin-bottom: 0.5em;
+}
+/*main   p setting */
+#main p {
+	padding: 0.5em 15px 0em;	         /* margine top,right bottom,left*/
+	text-indent:1em;		                     /* indent */
+	
+}
+/*main_lit   p setting */
+#main_lit p {
+	padding: 0.5em 15px 0em;	         /* margine top,right bottom,left*/
+	text-indent:1em;		                     /* indent */
+	
+}
+/*main_eng   p setting */
+#main_eng p {
+	padding: 0.5em 15px 0em;	         /* margine top,right bottom,left*/
+	text-indent:1em;		                     /* indent */
+	
+}
+
+/*main copyright */
+#main p.copyright {
+	text-align: right;
+    font-size: 9px;                        /*font size */
+}
+#main p.copyright:before {
+	content: "※";	                        /* top character */
+}
+#main ul {
+    list-style-type: disc; 	            /* indent */
+    padding: 0.5em 50px 1em;	    /* margine top,left_right bottom,left*/
+}
+#main ol {
+    padding: 0.5em 50px 1em;	    /* margine top,left_right bottom,left*/
+}#main li {
+    padding: 0.5em 0px 0.5em;	/* margine top,left_right bottom,left*/
+}
+#main dl {
+    padding: 0.5em 15px 0em;	    /* margine top,left_right bottom,left*/
+}
+#main dt {
+    padding: 0.5em 0px 0em;	    /* margine top,left_right bottom,left*/
+    font-weight: bold;
+}
+#main dd {
+	padding: 0em 15px 1em;	    /* margine top,left_right bottom,left*/
+	text-indent:1em;	                    /* indent */
+}
+#main figure {
+    margin:1em auto 1em;            /* margine top,left_right bottom,left*/
+    text-align:center;
+    display:block;
+}
+
+
+/*---------------------------------------------------------------------------------------------*/
+/*                   sub contents on the left (linked menus)                                                     */
+/*---------------------------------------------------------------------------------------------*/
+#sub {
+	float: left;	                                        /*put left side*/
+	width: 200px;	                                    /*width of sub contetns*/
+	padding-bottom: 00px;
+}
+/* setting: h2 tag in sub contents*/
+#sub h2 {
+	font-size: 100%;
+	padding: 3px 13px;		                        /*top_btm,  left_right space*/
+	background: #ccc;		                        /*back ground color,  light grey*/
+	
+	border-top: 5px solid #009c38;		    /*upper line width, color*/
+	border-bottom: 1px solid #009c38;	    /*bottom line width, color */
+}
+/*---------------------------------------------------------------------------------------------*/
+/*                   Menu  sub contents ;                                                                               */
+/*---------------------------------------------------------------------------------------------*/
+
+/*  sub menu settings */
+#sub ul.submenu {
+	margin-bottom: 15px;			                /* space at bottom of menu */
+}
+/* sub menu */
+#sub ul.submenu li a {
+	border-bottom: 1px solid #c0c0c0;	/* bottom line width, type, color */
+	text-decoration: none;
+	display: block;
+	padding: 4px 10px;	                            /*  top_bottom, left_right margine */
+}
+/*Mouse ON */
+#sub ul.submenu li a:hover {
+	background-color: #009c38;	           /* back ground color */
+	color: #fff;				                           /* font color */
+}
+/* sub title settings */
+#sub li.subsect {
+	text-decoration: none;
+	display: block;
+    font-weight: bold;
+	padding: 2px 0px 2px;	                   /* top, left_right, bottom margine*/
+}
+
+/*---------------------------------------------------------------------------------------------*/
+/*                   Footer definition                                                                                       */
+/*---------------------------------------------------------------------------------------------*/
+
+footer {
+	clear: both;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #FFF;				                /* font color */
+	background-color:#808080;	/* back ground color */
+}
+footer .pr {
+	display: block;
+	font-size: 80%;
+}
+footer a {
+	text-decoration: none;
+	color: #FFF;
+}
+footer a:hover {
+	color: #FFF;
+}
+
+
+
+/*---------------------------------------------------------------------------------------------*/
+/*                   Sub Menu Settings  , left hand side                                                            */                                                                                               */
+/*---------------------------------------------------------------------------------------------*/
+
+#pagetop {
+	clear: both;
+}
+#pagetop a {
+	color: #FFF;		                        /* char color, white*/
+	font-size: 12px;	                    /* char size */
+	background-color: #48c148;	/* background color */
+	text-decoration: none;
+	text-align: center;
+	width: 12em;	                        /* box width */
+	display: block;
+	float: right;
+	letter-spacing: 0.1em;	            /* char allocation a bit wider */
+}
+/* Mouse on */
+#pagetop a:hover {
+	background-color: #555;	    /* back ground color gray */
+	color: #FFF;			                    /* char color, white */
+}
+
+/*---------------------------------------------------------------------------------------------*/
+/*                   Misc                                                                                                         */
+/*---------------------------------------------------------------------------------------------*/
+
+
+.clear {
+	clear: both;
+}
+ul.disc {
+	padding: 0em 25px 1em;
+	list-style: disc;
+}
+
+.pr {
+	font-size: 10px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	
+}
+

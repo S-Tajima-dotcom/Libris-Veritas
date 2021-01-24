@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>Libris Veritas</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="copyright" content="S.Tajima">
+<meta name="description" content="理工学文書　及び　日本語翻訳作品の倉庫">
+<meta name="keywords" content="電子工学、制御工学、電磁気学、力学、解析力学、多変数制御理論、発振、ノイズ、
+1/f ノイズ、現代制御理論、古典制御理論、微分方程式、ラプラス変換、ラグランジュ、ハミルトン、ニュートン、ライプニッツ、ガリレオ、
+ティコ　ブラーエ、ベルヌーイ、マックスウエル、ヘビサイド、ファインマン、ケプラー、ホイヘンス、オイラー、ヤコビ、
+文学作品、小説、英語からの翻訳, フライス盤制御、Gコード、発振回路、電力工学、トランス、スイッチングトランス、原理、設計、
+DCDCコンバータ、インバータ、蓄電池、バッテリー、
+Libris Veritas,
+electronics, automatic control, multivariable control, oscillation,
+electric power conversion, Maxwell's equation, electro-magnetic theory, analytical mechanics,
+transformer, DCDC converter, inverter, design, analysis, Newton, Lagrange, Hamilton, Leibnitz,
+Galileo, Tycho Brahe, Maxwell, Euler, Jacobi, Bernoulli, Feynman, Heaviside, Kepler, Huygens,
+Grbl, CNC milling machine, ">
+
+
+<link rel="stylesheet" href="css_style_2021115.css">
+<script type="text/javascript" src="js/openclose.js"></script>
+<script type="text/javascript" src="js/analytics.js"></script>
+</head>
+
+<body id="top">
+
+<div id="container">
+
+<header>
+<h1>理工学文書/翻訳作品の倉庫</h1>
+<h2>Repository of Documents </h2>
+<p> Texts/monographs in Electronics/Physics</p>
+<p> Literatures Translated in Japanese</p>
+
+
+
+</header>
+
+<nav id="menubar">
+<ul>
+<li ><a href="index.html">ホーム <span> HOME</span></a></li>
+<li id ="current"><a href="eng_docs.html">理工学文書 <span> TEXTS/MONOGRAPHS </span></a></li>
+<li><a href="literature_docs.html">翻訳作品 <span> TRANSLATED LITERATURES</span></a></li>
+
+
+</ul>
+</nav>
+
+<div id="contents">
+
+<div id="main_eng">
+
+<section>
+<nav id="power_conv_j">
+<h2>電力変換技術の基礎</h2>
+ </nav>  
+ <p>
+ 21世紀に入って、地球環境の問題がさらに注目され、再生可能エネルギーの利用が推進されています。
+ 特に、太陽光発電システム、蓄電システム、ガス利用の電力エネルギーシステム等、
+ 一般家庭用電力機器も利用が進んでいます。これは、それまで、電力会社や専業メーカの専用技術と
+ 考えられてきたものが、それだけ身近になったという意味です。
+</p>
+<p>
+商用電源を入力とした家庭用電気製品は、20世紀前半にはすでにありましたが、
+これらの電源はトランスに簡単な整流回路を組み込んだだけのものでした。現在では、
+半導体を中心とした技術進歩により、小型の装置の内部でも高度な電力制御技術が使われています。
+</p>
+<p>
+技術の進歩が速く、また主要部品がＩＣであるため、電力制御機器の標準回路などは
+ＩＣメーカの発表資料が主要な情報源ですが、原理的な事柄は省かれる場合が多い様です。
+つまり、どの様にして動作するかという基本的な考えを知る機会や資料が少ないのが現状です。
+</p>
+<p>
+この文書は、電力変換技術の概要および、その具体例として、商用周波数トランスおよび、
+スイッチングコンバータの設計についてまとめたものです。通常、電源トランスを設計する必要も、
+機会も殆どありませんが、これは物理がいかに技術として実装されるかの例として記述しました。
+</p>
+<p>
+従って、内容は物理、電気工学、電子工学の基本的なものから
+応用までを含みますが、できるかぎり技術の底にある考え方を明確にするよう努力しました。そのため設計に
+関するも記述しましたが、設計マニュアルを目指した訳ではありません。実際の設計に入る前の、
+いわば技術的常識を得るため、あるいは実行すべき技術の方向を見定める指針となれば、
+本文書の目的は達したと言えるでしょう。
+</p>
+<p>
+なおこの文書は2012年にまとめたものが基になっており、一部アップデートが不十分な項目があるかも知れません。
+ </p>
+ 
+ </p>
+<a href="eng_pdfs/電力変換の基礎.pdf"><span class="mgr-10">電力変換の基礎(1.62MB)<img src="images/PDF_32.png"></span></a>
+<p>  &nbsp;</p>
+</section>
+
+<section>
+<nav id="power_conv_e">
+<h2>Basic Power Conversion Technologies</h2>
+ </nav>   
+ <span lang ="en">
+ <p>
+ In electric power conversion, both the input and output are either DC or AC. 
+ Thus there are four kind of power conversion technologies as shown below.
+ <p/>
+<p>
+DC to DC,  DC to AC,  AC to DC, AC to AC 
+</p>
+<p>
+In any conversion, energy storage device such as inductors, 
+capacitors or transformers
+are required. 
+That is, power conversion is performed by the combination 
+of inductors(transformer inclusive) and capacitors and switches. 
+Thanks to semiconductor technology, the switches are made 
+by semiconductors.
+Since we are now reasonably well equipped with those devices, it will be
+necessary for the engineers to understand fundamental philosophy 
+how they are utilized.
+</p>
+ <p> 
+In case of AC to AC power conversion, transformers in commercial f
+requency have been used in these hundred years and the technology 
+is well established, but how transformers are designed is generally 
+not well described because of (perhaps) lesser needs by engineers. 
+Moreover, how transformers are understood by Maxwell's equation
+are of even less interest in these days.    
+</p>
+<p>
+In this document, various power devices and power circuit are 
+discussed to provide basic knowledge of power systems as well as 
+how transformers are designed both for commercial frequency and 
+for switching operation with higher frequencies. 
+</p>
+<p>
+The original document was written in 2013, 
+and some of the items may require updating. 
+ </p> 
+ </span>
+ <a href="eng_pdfs/Basic_Power_Conversion_Technologies.pdf">
+ <span class="mgr-10">Basic Power Conversion Technologies(1.18MB)
+ <img src="images/PDF_32.png"></span></a>
+<p>  &nbsp;</p>
+ 
+</section>
+
+
+<section>
+<nav id="oscillation">
+<h2>発振と振動</h2>
+ </nav>
+</section>
+<p>
+この文書は、発振回路に対する興味がもとになっています。発振回路というのは
+ディジタル機器やIT機器には必ず使われており、これが誤動作
+（高調波発振、発振停止）すると機器が全く動作せず、商品回路設計では
+非常に神経を使う部分です。例えば水晶発振器を使う場合、
+水晶の特性に対して各種条件を付けるだけでなく、使用するICとプリント
+基板にマウントした状態で、その発振マージンをチェックします。
+最近は出来合いの水晶発振デバイスを使う事が多いようですが、
+部品コストより、この点を重視するようになったのでしょう。
+</p>
+<p>
+一方、発振というのは回路解析や理解がなかなか難しく、
+その理由の一つは基本的にフィードバック型なのに、
+トランジスタによるコルピッツ回路の様に、回路が洗練されていて、
+何がどう動作しているのか理解しにくい点があります。
+また、世の中では、正しく理解していない解説もあり、いざ調べようとすると混乱
+してしまう事もあります。
+</p>
+<p>
+現在では、遠の昔の技術なのですが、ディジタルIC
+の初期の製品としてTTLがありました。また、最近ではディスクリートの
+CMOS ICを用いて発振回路を組む事さえしませんが、TTLにせよ、
+CMOSにせよ、発振回路を組む事ができます。どちらもインバータを使用するのですが、
+その回路構成が、信号極性という意味でTTLとCMOSで丁度反対であり、
+どちらか一方しか発振できないのではと思わせるものです。
+</p>
+<p>
+この違いについて考え、実験も行い、到達した結論をまとめました。
+分かっている人には当然なのでしょうが、比較して議論したのは見たことがなく、
+実は回路の電圧駆動、電流駆動というかなり原理的な所に至り、中々面白いのです。
+</p>
+<a href="eng_pdfs/oscillation.pdf"><span class="mgr-10">発振と振動(946KB)<img src="images/PDF_32.png"></span></a>
+<p>  &nbsp;</p>
+	
+<section>
+<nav id="maxwell_eq">
+<h2>Maxwellの方程式</h2>
+</nav> 
+<p>
+1993年頃に、人体を伝送路としてビデオ信号を送るという研究をした事があります。片手にカメラ、
+もう一方に液晶ＴＶを持って、画像を送る訳です。この時は、ビデオ信号を周波数変調し、
+それをそのまま電極を通して手に伝え、それほど綺麗ではありませんでしたが、とに角一応見られる画像が送れました。
+</p>
+<p>
+エンジニアリング的には、これでもいいのですが、サイエンス的にはその原理がはっきりしませんでした。
+自分自身、電磁気学もちゃんとは理解しておらず、どういう事なのだろうと悩んだのです。
+</p>
+<p>
+そこで、エンジニアリング的な開発とは別に、電磁気学を再勉強しました。
+電磁気学の中心話題は何と言ってもMaxwellの方程式で、
+ファインマンの本(ファインマン物理学(3)、電磁気学　岩波書店。)
+などを丁寧に読むうちにそれなりの理解が進みました。しかし、どうしてもよく分から無い点があり、
+それはMaxwellの式そのものをどう捉えるかでした。
+個々の式についてはそれぞれファラデーの法則なり、アンペールの法則なりに対応するという点は分かるのですが
+「Maxwellの方程式が電磁気のすべてを記述している」というような議論については、
+「すべて」とは何か、またどうしてそんな事が言えるのかという本質的な疑問が残りました。
+</p>
+<p>
+この疑問はファインマンの本や、いくつかの教科書でも解決できず、何年間もそのままでした。
+しかしある時（どういうきっかけかは忘れました）「外積代数」という数学の中に、
+本質的なヒントを見つけ、それがこの文書をまとめるきっけけとなりました。
+具体的な話は本文を読んでいただくとして、ファインマンの本（電磁気学の教科書として非常にいい本です）
+を読んでいるだけでは、Maxwellの方程式は恐らく分かりません。
+</p>
+<p>
+本文書はそういう点を補うつもりでまとめました。
+</p>
+<a href="eng_pdfs/maxwell_eq.pdf"><span class="mgr-10">Maxwellの方程式(672KB)<img src="images/PDF_32.png"></span></a>
+<p>  &nbsp;</p>
+	
+
+
+</section>
+
+<section>
+<nav id="analytical_phy">
+<h2>Analytical physics to Automatic control</h2>
+ </nav>  
+ <span lang ="en">
+ <p>
+History of control theory can be divided into three era - classic, multivariable (or modern) 
+and robust control. The advent of classic treatise is said to be the days of James Watt 
+when he encountered an oscillatory behavior of steam engine as the  steam technology 
+advanced. J.C.Maxwell published a paper "On governors" in 1868 and this is the first 
+mathematical treatment of feedback.
+</p>
+<p>
+The application of Laplace transform to control theory is achieved by Hall in 1940 in 
+study of anti aircraft heavy guns.  The classic control theory which deals with single 
+input/output system is established around this era. It comprises heuristic design, 
+but easy to apply for many applications and still widely used.
+</p>
+<p>
+After the WW 2, the focus of control shifted from classic single variable systems 
+to multivariable systems particularly in the need of application for airborne vehicles. 
+The multivariable control theory is based on analytical physics which is an intrinsic 
+multivariable theory of physics and provided rigorous methodology combined 
+with optimization.  Thus, multivariable control theory progressed until some 
+people began to realize that it depends too much on the correctness of the model 
+of the target to be controlled.  
+</p>
+<p>
+The turn of multivariable control theory came around the middle of 1970s, 
+when it became understood that the rigor of multivariable design could fail 
+when applied to less rigorous reality. This is the advent of robust control, 
+and now research and application belong to this era.
+</p>
+<p>
+For students of automatic control, it is not an easy task to reach the entrance of 
+this current control theory because of the underlying 
+physics - analytical physics - is said to be not easy.       
+</p>
+<p>
+Here, the author tried very orthodox approach; that is, first discuss the 
+analytical physics so that reader can understand what it is almost fully 
+before getting into control. In the author's opinion, there is no "elementary" 
+analytical physics. People understand it or not. However, once understood, 
+it is not philosophically difficult although the discussion may be cumbersome.   
+</p>
+ </span>
+<a href="eng_pdfs/analytical_phy.pdf"><span class="mgr-10">Analytical physics to 
+Automatic control(1.52MB)<img src="images/PDF_32.png"></span></a>
+<p>  &nbsp;</p> 
+ 
+ </section>
+
+
+
+
+
+
+
+
+
+
+<section>
+<nav id="1_f_noise">
+<h2>ノイズ(1/fノイズ測定の実例)</h2>
+</nav>   
+<p>
+筆者はもう50年以上、電子回路（アナログ回路、ディジタル回路）の設計や製作をして来ましたが、
+本当にノイズを気にして設計した事がありません。今までに、オーディオ用MCカートリッジヘッドアンプ
+も何回かは製作、それなりに音が出た筈ですが、ノイズの原理的な内容を考えませんでした。
+</p>
+<p>
+2019年になって、あるきっかけから、1/fノイズの測定に協力することになり、
+機器の設計の前にノイズそのものを調べました。その中で一番参考にになったのは
+イリノイ大学の学生の修士論文です。測定原理は簡単なのですが、この論文を見ると、
+測定方法や測定環境、統計的処理のための測定回数など、とても気楽にトライできそうもありません。
+</p>
+<p>
+そのため、この修士論文程のSN比は無理なのですが、簡単な回路や測定でどこまで
+1/fが観測可能かという観点から製作しました。
+</p>
+<p>
+この文書は簡易測定回路と、その実験結果が主内容なのですが、
+結果だけ見たのでは印象が薄く、人の興味を引くのはとても無理そうです。
+</p>
+<p>
+そこで、ノイズについて調査した内容をまとめ、印象の薄い実験結果の裏には、
+これだけの物理や、先人の知恵があるという事を強調しようとしました。うまく行きましたでしょうか？
+</p>
+<p>
+なお、本文書は兵庫県立大学、中村知道教授と共同で実験を行ったものが元となっています。
+</p>
+<a href="eng_pdfs/1_f_noise.pdf"><span class="mgr-10">ノイズ(1/fノイズ測定の実例)(868KB)<img src="images/PDF_32.png"></span></a>
+<p>  &nbsp;</p>
+	
+
+
+</section>
+
+<section>
+<nav id="cnc_grbl">
+<h2>CNC制御プログラム「Grbl」の解析</h2>
+ </nav>  
+</section>
+<p>
+CNCフライス盤の制御には、いわゆるGコードが用いられている。このコード自体は簡単なキャラクターコードで、
+これをアプリケーションソフトによりパージングし、コードブロックごとにフライス盤に送信、
+インタープリターとして3次元切削動作を制御する。
+</P>
+<p>
+Gコードの構成自体は直接的で、それ程困難ではないが、設計自体が古く、コード体系としては、
+命令の直交性の悪さや、パラメータの解釈に対する統一がとれていないなどの欠点がある。
+しかし、これがCNCマシンの標準制御コードであり、これに従って実装するのは必然であろう。
+</p>
+<p>
+しかも、非常に幸いな事に、このGコードによるフリー制御ソフトウエア一式がGrblとして公開されている。
+一方、3次元制御を必要とする機器はフライス盤以外にも、3次元プロッター、レーザーカッター等があり、
+かつその形式や規模など多種多様である。
+</p>
+<p>
+Grblはこの多種多様な機器に、できるだけ対応できるように設計されている。
+そのためコードの分量も膨大であり、ファイル数も非常に多く、これを読み解いてターゲット
+機器に応用するのは、実はそれほど容易ではない。
+</p>
+<p>
+また、Grblは、Arduinoベースのマイクロプロセッサに搭載する事を前提にし、
+Gコードの解釈からステッピングモータの制御、スピンドルモータの回転制御から、
+装置の安全ドアの管理まで、極めて行き届いたソフトウエア群となっている。
+</p>
+<p>
+この文書では、実際に製作したフライス盤に応用する事を前提として、
+Grblのソフトウエア群の動作を読み解こうとしたものである。
+</p>
+<p>
+ただし、必要最低限な機能を持つフライス盤に応用するため、
+ソフトウエア群から不要なものを省き、容易に理解し、実装するのを目的とした。
+</p>
+<p>
+一方、Gコードそのものの解釈、あるいは解析無しには、CNCマシンに対して
+実装する事は不可能で、必要な限りのGコード解説も加えた。
+この過程で、Gコードそのものの性格もある程度見えてきたが、これについては主観的意見である。
+</p>
+<p>
+以下の解説の中には思い違いや解釈間違いがあるかも知れない。
+情報源はあくまでGrblソースコードである。　
+</p>
+<a href="eng_pdfs/cnc_grbl.pdf"><span class="mgr-10">CNC制御プログラム「Grbl」の解析(1.09MB)<img src="images/PDF_32.png"></span></a>
+<p>  &nbsp;</p>
+	
+
+
+
+<section>
+<nav id="physics_evol_1">
+<h2>物理の進化１　黎明期から解析力学の完成まで</h2>
+ </nav>  
+ <p>
+現在は、物理学やその記述の基本となる数学が体系的に整理され、どのような順序で何を勉強するかが
+良く整理されていると言えそうです。例えば力学ではニュートンの運動方程式から始まります。
+これはニュートンが考えた力学の表現方法や考え方が、長い時間をかけて洗練され、
+中学校や高等学校で学びやすい様にまとめられ、普通の人に理解しやすいまでに発展してきたからと言えるでしょう。
+決してニュートンが最初に発表した時から私たちに分かり易く書かれていたのではありません。
+それどころか、ニュートンが最初に彼の考えを発表した時には同時代の「学者」に分かり易いように、
+幾何学を使い、「微分」という新しい概念は表には出さなかったのです。
+</p>
+
+<p>
+力学の勉強法が整理される一方、教科書など随所に論理的な飛躍を入れ、
+その飛躍が何故なのかを考えたり、議論したりせず、「事実として承認しなさい」という記述が目立ちます。
+これは、力学をある意味手軽に理解したような気分になり、それなりの応用にはこの方が時間がかからず手軽なためかも知れません。
+</p>
+
+<p>
+特に、ニュートンによる初歩的な力学から解析力学、そして解析力学ではラグランジュの方法
+からハミルトンの方法に移行する時に飛躍があり、これらを通して解説あるいは議論されている
+文書が少ないのが現状です。
+</p>
+<p>
+この様な、忙しい環境にあると、人によっては、物理の本質や論理展開が「全く分からない」となり、
+挫折を余儀なくされるかも知れません。この文書は、この様な事態を多少とも軽減するつもりで書きました。
+</p>
+<p>
+本文書では力学の論理的発展についてまとめてみました。この中には歴史的な記述を含みますが、
+論理的発展を記述する為に、その当時の数学、論理や技術の様子をある程度知らないと分かり難いからです。
+ </p>
+ <a href="eng_pdfs/physics_evol_1.pdf"><span class="mgr-10">物理の進化１　黎明期から解析力学の完成まで(2.16MB)<img src="images/PDF_32.png"></span></a>
+<p>  &nbsp;</p>
+ 
+</section>
+<p id="pagetop"><a href="#">↑ PAGE TOP</a></p>
+</div>
+<!--/main-->
+
+<div id="sub">
+
+
+<nav>
+<h2>
+<p>理工学文書 </p>
+<p>TEXTS/MONOGRAPHS </p>
+ <p> for</p>
+<p>ENGINEERING/PHYSICS </p>
+ 
+</h2>
+
+<ul class="submenu mb10">
+<li><a href="eng_docs.html#power_conv_j">電力変換技術の基礎</a></li>
+<li><a href="eng_docs.html#power_conv_e">Basic Power Conversion Technology</a></li>
+<li><a href="eng_docs.html#oscillation">振動と発振</a></li>
+<li><a href="eng_docs.html#maxwell_eq">Maxwellの方程式</a></li>
+<li><a href="eng_docs.html#analytical_phy">Analytical Physics to Automatic control</a></li>
+<li><a href="eng_docs.html#1_f_noise">ノイズ（1/f ノイズ測定の実例）</a></li>
+<li><a href="eng_docs.html#cnc_grbl">CNC制御プログラム「Grbl」の解析</a></li>
+<li><a href="eng_docs.html#physics_evol_1">物理の進化１   黎明期から解析力学の完成まで</a></li>
+
+</ul>
+
+
+
+
+</div>
+<!--/sub-->
+
+
+
+</div>
+<!--/contents-->
+
+<footer>
+<small>Copyright&copy; 2021 <a href="index.html">S.Tajima</a>　All Rights Reserved.</small>
+
+</footer>
+
+</div>
+<!--/container-->
+
+
+</body>
+</html>
